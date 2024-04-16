@@ -1,0 +1,35 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+  "title": 123,
+  "details": "halloween dos cancelados",
+  "maximumAttendees": 300
+}
+
+###
+
+POST http://localhost:3333/events/4e6e8f77-7ee0-4bdc-8914-18b9f6aa604e/attendees
+Content-Type: application/json
+
+{
+  "name": "Lucao",
+  "email": "lucao@outlook.com"
+
+}
+
+###
+
+GET http://localhost:3333/events/4e6e8f77-7ee0-4bdc-8914-18b9f6aa604e
+
+###
+
+GET http://localhost:3333/attendees/5/badge
+
+###
+
+GET http://localhost:3333/attendees/5/check-in
+
+###
+
+GET http://localhost:3333/events/4e6e8f77-7ee0-4bdc-8914-18b9f6aa604e/attendees
